@@ -35,14 +35,49 @@
           </div>
 
           <div class="form">
-            <form action="">
-              <div><input type="text" placeholder="First Name" required /></div>
-              <div><input type="text" placeholder="Last Name" required /></div>
-              <div>
-                <input type="email" placeholder="Email Address" required />
+            <form>
+              <div class="form-control">
+                <input
+                  id="first-name"
+                  type="text"
+                  placeholder="First Name"
+                  required
+                />
+                <img src="./images/icon-error.svg" alt="" />
+                <small>Error Message</small>
               </div>
-              <div>
-                <input type="password" placeholder="Password" required />
+
+              <div class="form-control">
+                <input
+                  id="second-name"
+                  type="text"
+                  placeholder="Last Name"
+                  required
+                />
+                <img src="./images/icon-error.svg" alt="" />
+                <small>Error Message</small>
+              </div>
+
+              <div class="form-control">
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="Email Address"
+                  required
+                />
+                <img src="./images/icon-error.svg" alt="" />
+                <small>Error Message is now here now where you</small>
+              </div>
+
+              <div class="form-control">
+                <input
+                  id="password"
+                  type="password"
+                  placeholder="Password"
+                  required
+                />
+                <img src="./images/icon-error.svg" alt="" />
+                <small>Error Message</small>
               </div>
               <div>
                 <button type="submit" class="btn">Claim your free trial</button>

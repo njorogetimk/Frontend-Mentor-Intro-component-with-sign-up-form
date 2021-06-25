@@ -63,6 +63,10 @@
           text-decoration: none !important;
         }
 
+        input.error {
+          border: 1px solid $primaryRed;
+        }
+
         button {
           background-color: $primaryGreen;
           color: white;
@@ -72,6 +76,23 @@
           padding: 1.5rem;
           font-size: 1.1rem;
           cursor: pointer;
+        }
+      }
+
+      &-control {
+        position: relative;
+        img {
+          visibility: hidden;
+          position: absolute;
+          top: 1rem;
+          right: 4rem;
+        }
+        small {
+          visibility: hidden;
+          display: block;
+          text-align: right;
+          margin-right: 1.3rem;
+          color: $primaryRed;
         }
       }
       p {
