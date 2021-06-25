@@ -63,10 +63,6 @@
           text-decoration: none !important;
         }
 
-        input.error {
-          border: 1px solid $primaryRed;
-        }
-
         button {
           background-color: $primaryGreen;
           color: white;
@@ -85,13 +81,29 @@
           visibility: hidden;
           position: absolute;
           top: 1rem;
-          right: 4rem;
+          right: 2rem;
         }
         small {
           visibility: hidden;
           display: block;
           text-align: right;
           margin-right: 1.3rem;
+          color: $primaryRed;
+        }
+      }
+
+      &-control.error {
+        img {
+          visibility: visible;
+        }
+
+        small {
+          visibility: visible;
+        }
+        input {
+          border: 1px solid $primaryRed;
+        }
+        .error {
           color: $primaryRed;
         }
       }
